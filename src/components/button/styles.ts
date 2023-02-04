@@ -7,7 +7,6 @@ interface IStaledButtonProps {
 export const StyledButton = styled.button<IStaledButtonProps>`
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 0.6rem;
   margin-top: 15px;
 
@@ -29,13 +28,9 @@ export const StyledButton = styled.button<IStaledButtonProps>`
       case "navButton":
         return css`
           padding: 2rem;
-          width: 211px;
+          width: 221px;
           height: 50px;
         `;
     }
   }}
-
-  &:hover {
-    filter: brightness(1.2);
-  }
 `;
