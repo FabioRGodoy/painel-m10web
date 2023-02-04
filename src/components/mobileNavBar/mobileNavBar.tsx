@@ -1,0 +1,37 @@
+import { StyledMobileNav } from "./styles";
+import { AiFillSignal, AiFillWechat, AiFillInfoCircle } from "react-icons/ai";
+import { HiOutlineTrendingUp } from "react-icons/hi";
+import { SlSocialGithub } from "react-icons/sl";
+import { SlSocialLinkedin, SlSocialTwitter } from "react-icons/sl";
+import { RxDoubleArrowRight } from "react-icons/rx";
+import logoMobile from "../../assets/img/logoIcon.png";
+import { useParams } from "react-router-dom";
+
+export const MobileNavBar = () => {
+  const { page } = useParams();
+  return (
+    <StyledMobileNav>
+      <img src={logoMobile} alt="" />
+      <div className="flexNavContainer">
+        <AiFillSignal size={25} color="grey" />
+        <AiFillWechat size={25} color="grey" />
+        <HiOutlineTrendingUp size={25} color="grey" />
+        <AiFillInfoCircle size={25} color="grey" />
+        <RxDoubleArrowRight size={30} className="openNav" />
+      </div>
+      <footer>
+        <a href="https://github.com/FabioRGodoy">
+          <SlSocialGithub size={25} />
+        </a>
+
+        <a href="https://www.linkedin.com/in/fabiogodoyy/">
+          <SlSocialLinkedin size={25} />
+        </a>
+
+        <a href="https://www.linkedin.com/in/fabiogodoyy/">
+          <SlSocialTwitter size={25} />
+        </a>
+      </footer>
+    </StyledMobileNav>
+  );
+};
