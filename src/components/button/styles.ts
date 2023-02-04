@@ -1,8 +1,5 @@
 import styled, { css } from "styled-components";
-
-interface IStaledButtonProps {
-  buttonSize: "loginButton" | "navButton";
-}
+import { IStaledButtonProps } from "../../interfaces/interfaces";
 
 export const StyledButton = styled.button<IStaledButtonProps>`
   display: inline-flex;
@@ -24,6 +21,7 @@ export const StyledButton = styled.button<IStaledButtonProps>`
           padding: 1rem;
           width: 151px;
           height: 40px;
+          justify-content: center;
         `;
       case "navButton":
         return css`

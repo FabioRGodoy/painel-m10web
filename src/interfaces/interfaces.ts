@@ -1,3 +1,4 @@
+import { ButtonHTMLAttributes } from "react";
 import { FieldError, UseFormRegister } from "react-hook-form";
 
 export interface ILoginForm {
@@ -13,4 +14,13 @@ export interface IInputProps {
   type?: string;
   placeholder: string;
   inputPassword: boolean;
+}
+
+export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode;
+  buttonSize: "loginButton" | "navButton";
+}
+
+export interface IStaledButtonProps {
+  buttonSize: "loginButton" | "navButton";
 }
