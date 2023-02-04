@@ -5,6 +5,11 @@ export const StyledMobileNav = styled.div`
   width: 40px;
   height: 100vh;
   padding-top: 20px;
+  position: fixed;
+
+  .hidden {
+    display: none;
+  }
 
   img {
     margin-bottom: 40px;
