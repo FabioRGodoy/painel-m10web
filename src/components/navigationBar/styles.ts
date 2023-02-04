@@ -7,6 +7,20 @@ export const NavContainer = styled.div`
   padding-top: 30px;
   position: fixed;
 
+  .closeMenu {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    cursor: pointer;
+  }
+
+  .closeMenu:hover {
+    font-size: 1.1rem;
+  }
+
   .logo {
     width: 75%;
     margin-left: 25px;

@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, Dispatch, SetStateAction } from "react";
 import { FieldError, UseFormRegister } from "react-hook-form";
 
 export interface ILoginForm {
@@ -23,4 +23,8 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export interface IStaledButtonProps {
   buttonSize: "loginButton" | "navButton";
+}
+
+export interface INavBarProps {
+  setOpenMenu: Dispatch<SetStateAction<boolean>>;
 }
