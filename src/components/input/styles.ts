@@ -12,7 +12,7 @@ export const InputContainer = styled.div`
 
     .invisibleEye {
       position: absolute;
-      right: 1%;
+      right: 13%;
       top: 35%;
     }
   }
@@ -21,6 +21,6 @@ export const StyledInput = styled.input`
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: var(--border-radius);
   height: 44px;
-  width: 100%;
+  width: 90%;
   padding-left: 10px;
 `;

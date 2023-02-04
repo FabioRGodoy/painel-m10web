@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Button } from "../../components/button/button";
@@ -9,6 +10,7 @@ import { formSchema } from "../../schemas/schemas";
 import { StyledForm } from "./styles";
 
 export const FormLogin = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -19,6 +21,8 @@ export const FormLogin = () => {
 
   const onSubmitLogin = (data: ILoginForm) => {
     console.log(data);
+    const page = "dashboard";
+    navigate(`/home/${page}`);
   };
   return (
     <StyledForm onSubmit={handleSubmit(onSubmitLogin)}>
