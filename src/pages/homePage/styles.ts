@@ -9,8 +9,8 @@ export const HomeContainer = styled.main`
 
 export const ContentContainer = styled.div`
   width: 90%;
-  padding: 40px;
-  margin-left: 220px;
+  padding: 20px;
+  margin-left: 40px;
 
   h1 {
     margin-bottom: 20px;
@@ -33,5 +33,10 @@ export const ContentContainer = styled.div`
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
+  }
+
+  @media (min-width: 900px) {
+    margin-left: 220px;
+    padding: 40px;
   }
 `;
