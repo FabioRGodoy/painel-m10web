@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     --color-text-grey: rgba(0, 0, 0, 0.44);
 
     //Background Colors
-    --color-bg-home: #E5E5E5;
+    --color-bg-home: #F3F3F3;
 
     //Border radius
     --border-radius: 5px;
